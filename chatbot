@@ -1,0 +1,18 @@
+def simple_chatbot():
+    print("Hey there! I am Heisenberg at your service")
+    while True:
+        user_input = input("You: ").lower()
+        if "hi" in user_input or "hello" in user_input or "hey" in user_input or "hola" in user_input:
+            print("Bot: Hello, my name is Heisenberg")
+        elif "what is your name" in user_input:
+            print("Bot: I am a bot created by Heisenberg. You can call me crazy!")
+        elif "how are you" in user_input:
+            print("Bot: I'm doing good. How about you?")
+        elif "quit" in user_input:
+            print("Bot: Thank you for using our intelligence services")
+            break
+        else:
+            print("Bot: Sorry, I didn't understand that.")
+            
+if __name__ == "__main__":
+    simple_chatbot()
